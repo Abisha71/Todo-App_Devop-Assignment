@@ -1,4 +1,5 @@
 # Project Title
+To-Do Application
 
 ## Group Information
 - **Student 1:**  C.P.Imashi Fernando - ITBIN-2313-0033 - Role: Full-Stack Developer
@@ -6,7 +7,8 @@
 - **Student 2:** W.J.Abisha - ITBIN-2313-0003 - Role: DevOps Engineer
 
 ## Project Description
-[To-Do Application]
+[To-Do Application  has do Reminding Tasks, Add task
+Delete Tasks ,Update]
 ## Live Deployment
 🔗 **Live URL:** https://todo-app-devop-assignment.vercel.app/
 
