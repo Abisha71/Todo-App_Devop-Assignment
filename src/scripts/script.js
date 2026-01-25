@@ -1,3 +1,4 @@
+//Scripts
 function addTask() {
     var taskInput = document.getElementById("taskInput");
     var taskText = taskInput.value;
@@ -16,9 +17,9 @@ function addTask() {
 
     // Click to mark completed
     span.onclick = function() {
-        span.classList.toggle("completed");
-    }
-    // Delete button
+            span.classList.toggle("completed");
+        }
+        // Delete button
     var deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.className = "delete-btn";
