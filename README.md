@@ -1,4 +1,4 @@
-# Project Title
+
 To-Do Application
 
 ## Group Information
