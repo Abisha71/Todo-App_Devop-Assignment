@@ -1,5 +1,5 @@
 
-To-Do Application
+- **To-Do Application**
 
 ## Group Information
 - **Student 1:**  C.P.Imashi Fernando - ITBIN-2313-0033 - Role: Full-Stack Developer
@@ -11,6 +11,8 @@ To-Do Application
 Delete Tasks ,Update]
 ## Live Deployment
 🔗 **Live URL:** https://todo-app-devop-assignment.vercel.app/
+## Output Screen Short
+![Alt text](images\Output App.jpeg)
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
@@ -44,6 +46,9 @@ We implemented the following branching strategy:
 - Node.js (version 18 or higher)
 - Git
 
+
+
+## Setup Instructions
 ### Installation
 ```bash
 # Clone the repository
@@ -88,6 +93,34 @@ npm run dev
 
 # Challenges Faced
 The error while deployment ia very complex
+## 🐳 Docker Setup
+
+The application is containerized using **Nginx (alpine)** to serve static files efficiently.
+
+### Dockerfile Highlights
+- Uses lightweight `nginx:alpine` base image
+- Copies static files from `src/` directory
+- Exposes port 80
+
+### docker-compose.yml
+Single-service configuration for quick local development.
+
+### How to Run Locally with Docker
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Abisha71/Todo-App_Devop-Assignment.git
+
+# 2. Enter project directory
+cd Todo-App_Devop-Assignment
+
+# 3. Build and start the container
+docker-compose up --build
+
+# 4. Open in browser
+→ http://localhost:8080
+
+
 
 
 
