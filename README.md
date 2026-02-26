@@ -1,5 +1,5 @@
 
-- **To-Do Application**
+## To-Do Application
 
 ## Group Information
 - **Student 1:**  C.P.Imashi Fernando - ITBIN-2313-0033 - Role: Full-Stack Developer
