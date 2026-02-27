@@ -12,7 +12,7 @@ Delete Tasks ,Update]
 ## Live Deployment
 🔗 **Live URL:** https://todo-app-devop-assignment.vercel.app/
 ## Output Screen Short
-![Alt text](images\Output App.jpeg)
+![Alt text](images/Output%20App.jpeg)
 
 ## Technologies Used
 - HTML5, CSS3, JavaScript
@@ -107,18 +107,28 @@ Single-service configuration for quick local development.
 
 ### How to Run Locally with Docker
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/Abisha71/Todo-App_Devop-Assignment.git
+## 🐳 Docker Setup Instructions
 
-# 2. Enter project directory
-cd Todo-App_Devop-Assignment
+1️⃣ Go to project folder:
+cd path/to/your/project
 
-# 3. Build and start the container
-docker-compose up --build
+2️⃣ Build the Docker image:
+docker build -t to-do-app .
 
-# 4. Open in browser
-→ http://localhost:8080
+3️⃣ Tag the image for Docker Hub:
+docker tag to-do-app shaabi/to-do-app:latest
+
+4️⃣ Login to Docker Hub (first time only):
+docker login
+
+5️⃣ Push image to Docker Hub:
+docker push shaabi/to-do-app:latest
+
+6️⃣ Run the container:
+docker run -d -p 3000:80 shaabi/to-do-app
+
+7️⃣ Open the app in browser:
+http://localhost:3000
 
 
 
