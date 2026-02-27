@@ -130,7 +130,8 @@ docker run -d -p 3000:80 shaabi/to-do-app
 7️⃣ Open the app in browser:
 http://localhost:3000
 
-
+## Output Screen Short
+![Alt text](images/localhost_Output.jpeg%20App.jpeg)
 
 
 
