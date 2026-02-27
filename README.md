@@ -131,9 +131,8 @@ docker run -d -p 3000:80 shaabi/to-do-app
 http://localhost:3000
 
 ## Output Screen Short
-![Alt text](images/localhost_Output.jpeg%20App.jpeg)
 
-
+![Alt text](images/localhost_Output%20App.jpeg)
 
 
 
