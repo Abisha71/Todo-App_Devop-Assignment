@@ -1,10 +1,39 @@
-Docker-compose.yml :version: '3.8'
+version: '3.9'  # 3.8-ஐ விட 3.9 சமீபத்தியது + deploy resources support நல்லா இருக்கு
 
 services:
-  nginx:
-    build: .
-    ports:
-      - "80:80"
+  todo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: todo-app-nginx
+    ports:
+      - "8080:80"               # host:80 ஐ avoid பண்ணி 8080 போடுவது safer (port conflict தவிர்க்க)
+    restart: unless-stopped     # production-like behavior
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'           # 50% CPU max
+          memory: 256M          # max memory
+        reservations:
+          cpus: '0.2'           # minimum guaranteed
+          memory: 128M
+    networks:
+      - todo-network
     volumes:
-      - ./src:/usr/share/nginx/html
+      - type: bind
+        source: ./src
+        target: /usr/share/nginx/html
+        read_only: true         # security: static files-ஐ read-only mount (modification தடுக்கும்)
+    environment:
+      - NGINX_PORT=80           # optional - config externalize example
+
+networks:
+  todo-network:
+    driver: bridge
+    name: todo-app-net        # custom network name - isolation & clarity
