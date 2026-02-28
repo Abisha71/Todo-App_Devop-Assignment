@@ -91,6 +91,30 @@ npm run dev
    - Monitor deployments in GitHub Actions tab
    - Check Vercel dashboard for deployment status and logs
 
+## 🐳Todo App - Dockerized (Assignment 2)🐳
+
+Static Todo application containerized using Docker & Docker Compose.
+
+## Prerequisites
+- Docker installed
+- Docker Compose installed (usually comes with Docker Desktop)
+
+## Quick Start (Recommended - using Docker Compose)
+1. Go to project folder:
+   ```bash
+   cd path/to/Todo-App_Devop-Assignment
+
+2. Build and run the entire application:   
+docker compose up --build -d
+
+3. Open the app in browser:text
+http://localhost:8080
+
+4. Stop the application (when done)
+docker compose down
+
+
+
 # Challenges Faced
 The error while deployment ia very complex
 ## 🐳 Docker Setup
@@ -104,32 +128,6 @@ The application is containerized using **Nginx (alpine)** to serve static files 
 
 ### docker-compose.yml
 Single-service configuration for quick local development.
-
-### How to Run Locally with Docker
-
-## 🐳 Docker Setup Instructions
-
-1️⃣ Go to project folder:
-cd path/to/your/project
-
-2️⃣ Build the Docker image:
-docker build -t to-do-app .
-
-3️⃣ Tag the image for Docker Hub:
-docker tag to-do-app shaabi/to-do-app:latest
-
-4️⃣ Login to Docker Hub (first time only):
-docker login
-
-5️⃣ Push image to Docker Hub:
-docker push shaabi/to-do-app:latest
-
-6️⃣ Run the container:
-docker run -d -p 3000:80 shaabi/to-do-app
-
-7️⃣ Open the app in browser:
-http://localhost:3000
-
 
 
 
