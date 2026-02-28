@@ -113,7 +113,8 @@ http://localhost:8080
 4. Stop the application (when done)
 docker compose down
 
-
+## Output Screen Short
+ ![Alt text](images/localhost_Output%20App.jpeg)
 
 # Challenges Faced
 The error while deployment ia very complex
