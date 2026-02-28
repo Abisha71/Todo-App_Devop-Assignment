@@ -114,7 +114,7 @@ http://localhost:8080
 docker compose down
 
 ## Output Screen Short
- ![Alt text](images/localhost_Output%20App.jpeg)
+ ![Todo App running at localhost:8080](images/localhost_Output.jpeg)
 
 # Challenges Faced
 The error while deployment ia very complex
