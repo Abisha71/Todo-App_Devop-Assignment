@@ -100,20 +100,25 @@ Static Todo application containerized using Docker & Docker Compose.
 - Docker Compose installed (usually comes with Docker Desktop)
 
 ## Quick Start (Recommended - using Docker Compose)
-1. Go to project folder:
-   ```bash
-   cd path/to/Todo-App_Devop-Assignment
+1. Install Docker Desktop (includes Docker Compose)
+Windows: Download from https://www.docker.com/products/docker-desktop/ → Install → Enable WSL 2 during setup → Restart PC if asked.
+Mac: Same link → Install → Open and let it finish setup.
 
-2. Build and run the entire application:   
+2. Get the Project (Clone or download )
+cd Todo-App_Devop-Assignment
+
+3. Run the App (same command everywhere)
 docker compose up --build -d
 
-3. Open the app in browser:text
-http://localhost:8080
+4. Open in Browser
+Go to: http://localhost:8080
+(Your To-Do app should load. If not → check docker compose logs for errors.)
 
-4. Stop the application (when done)
+5. Stop When DoneBash
 docker compose down
+   
 
-
+**Screenshot:** Browser view of the containerized Todo application after `docker compose up --build -d`. This confirms static files are served correctly from the `src/` folder.
 
 # Challenges Faced
 The error while deployment ia very complex
