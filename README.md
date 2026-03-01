@@ -21,8 +21,14 @@ Fully client-side – no backend, no login, no frameworks.
 
 ## Live Deployment🌍🔥
 🔗🔗 **Live URL:** https://todo-app-devop-assignment.vercel.app/
-## Output Screen Short
+## Output Screen Short(My App)
 ![Alt text](images/Output%20App.jpeg)
+
+
+## Output Screenshot 📸
+
+![To-Do Application Running in Browser](images/Output2.jpeg)  
+*Live view of the containerized To-Do app at http://localhost:8080 – tasks, reminders, and responsive UI working perfectly!*
 
 ## Technologies Used🛠️
 
